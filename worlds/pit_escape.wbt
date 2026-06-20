@@ -14,8 +14,8 @@ WorldInfo {
   window "pit_escape"
 }
 Viewpoint {
-  orientation 0.16302088391248715 0.274889731435117 -0.9475546564499173 1.206964932897147
-  position -1.8296622964272937 7.085017724079113 3.220796628344865
+  orientation 0.20704645388438786 0.3269504122683506 -0.9220819886818394 1.274526668791117
+  position -2.590737501854306 7.120336792793072 4.483625498705658
 }
 TexturedBackground {
   texture "mars"
@@ -32,7 +32,7 @@ SpotLight {
 }
 DEF GROUND Solid {
   children [
-    Transform {
+    Pose {
       translation 115 0.3 0
       children [
         Shape {
@@ -48,7 +48,7 @@ DEF GROUND Solid {
         }
       ]
     }
-    Transform {
+    Pose {
       translation -115 0.3 0
       children [
         Shape {
@@ -64,7 +64,7 @@ DEF GROUND Solid {
         }
       ]
     }
-    Transform {
+    Pose {
       translation 0 -130 0
       children [
         Shape {
@@ -80,7 +80,7 @@ DEF GROUND Solid {
         }
       ]
     }
-    Transform {
+    Pose {
       translation 0 130 0
       children [
         Shape {
@@ -108,7 +108,22 @@ DEF PIT Pit {
   pitRadius 2.7
 }
 DEF ROBOT_BB-8 BB-8 {
-  translation 0 -0.02 0
+  hidden position_0_0 8.68358740179883e-06
+  hidden position_0_1 1.98273632581503e-05
+  hidden linearVelocity_0 -1.2577890287178077 1.0436812944909837 0.5661140954611804
+  hidden angularVelocity_0 -1.7245129784139737 -3.655434564660347 0.33195411377139505
+  hidden rotation_3 0 0 1 8.683580567704757e-06
+  hidden position_3_0 46.1955991854738
+  hidden linearVelocity_3 -1.0688889956197762 0.8719122410680055 0.4851964031956101
+  hidden angularVelocity_3 -1.7250613275514937 -3.6549926952882625 0.33148736928969136
+  hidden rotation_4 0 -1 0 4.069883271962889
+  hidden linearVelocity_4 -1.0678406700918992 0.8718632830881564 0.4807337882802966
+  hidden angularVelocity_4 -0.8820815629804972 -0.5707017081025718 5.4545631867498185
+  hidden rotation_7 0 0 1 1.9827371080213068e-05
+  hidden linearVelocity_7 -0.6585232521686395 0.49233806180991063 0.3255404891824931
+  hidden angularVelocity_7 -1.723933112975364 -3.655426543371223 0.3322107242096535
+  translation 0.47080115104708103 -0.45708529517825747 0.4044112570645295
+  rotation 0.14073521218680093 0.8468688986188881 0.512841757857887 2.852801287175689
   name "participant"
   controller "participant"
   synchronization FALSE
